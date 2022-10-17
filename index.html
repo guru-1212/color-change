@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input{
+            border: 2px solid black;
+            width: 250px;
+            height: 30px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: chartreuse;
+            
+          
+        }
+        input:focus{
+            outline: none;
+        }
+        ::placeholder{
+            color: grey;
+            font-size: 20px;
+           
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        body{
+            font-size: 30px;
+        }
+        
+    </style>
+    <script>
+        function findingError(){
+            var x = document.getElementById("password").value;
+           
+           if (x=="green") {
+            document.getElementById("body1").style.backgroundColor = "green";       
+           } 
+          else if (x=="yellow") {
+            document.getElementById("body1").style.backgroundColor = "yellow";
+           } 
+           else if (x=="red") {
+            document.getElementById("body1").style.backgroundColor = "red";
+           } 
+           else if (x=="orange") {
+            document.getElementById("body1").style.backgroundColor = "orange";
+           } 
+           else if (x=="purple") {
+            document.getElementById("body1").style.backgroundColor = "purple";
+           } 
+           else if (x=="black") {
+            document.getElementById("body1").style.backgroundColor = "black";
+           } 
+           else if (x=="brown") {
+            document.getElementById("body1").style.backgroundColor = "brown";
+           } 
+           else if (x=="blue") {
+            document.getElementById("body1").style.backgroundColor = "blue";
+           } 
+           else if (x=="pink") {
+            document.getElementById("body1").style.backgroundColor = "pink";
+           } 
+           else if (x=="violet") {
+            document.getElementById("body1").style.backgroundColor = "violet";
+           }  else {
+            document.getElementById("body1").style.backgroundColor = "";           
+           }
+            
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body id="body1">
+   
+  
+    <dd><input type="text" name="password" id="password" onkeyup="findingError()" placeholder="Enter color Name "></dd>
+
+   
+</body>
+</html>
